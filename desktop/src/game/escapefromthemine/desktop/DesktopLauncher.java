@@ -6,7 +6,15 @@ import game.escapefromthemine.EscapeFromTheMine;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new EscapeFromTheMine(), config);
+		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
+		
+		cfg.title = "EscapeFromTheMain";
+		
+		cfg.resizable = false;
+		
+		cfg.width = 480;
+		cfg.height = 800;
+		
+		new LwjglApplication(new EscapeFromTheMine(), cfg);
 	}
 }
